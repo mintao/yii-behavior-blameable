@@ -23,21 +23,19 @@ Usage
 In your model you want to track either extend your behaiors function or just create a new one with the following content:
 
 <code>
-public function behaviors()
-{
+public function behaviors() {
     return array(
         'Blameable' => array(
             'class'=>'application.components.BlameableBehavior',
         ),
     );
 }
-</code>
+<code>
 
 Optionally you can define own column names for *created_by* and *updated_by*:
 
 <code>
-public function behaviors()
-{
+public function behaviors() {
     return array(
         'Blameable' => array(
             'class'=>'application.components.BlameableBehavior',
